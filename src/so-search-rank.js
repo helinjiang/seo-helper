@@ -8,7 +8,7 @@ var casper = require('casper').create({
     }
 });
 
-phantom.outputEncoding = 'gbk';//解决乱码问题
+// phantom.outputEncoding = 'gbk';//解决乱码问题
 
 casper.start('https://www.so.com/', function () {
     // Wait for the page to be loaded
