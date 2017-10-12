@@ -1,5 +1,33 @@
 var NOW_UTIL = (function () {
 
+    function getSeoMeta() {
+        var obj = {};
+
+        // keywords
+        obj.title = {
+            value: $('#webpage_tdk_title').text(),
+            length: $('#webpage_title_len').text(),
+            tips: $('#webpage_tdk_title').parent().next('td').text()
+        };
+
+        // keywords
+        obj.keywords = {
+            value: $('#webpage_tdk_keywords').text(),
+            length: $('#webpage_keywords_len').text(),
+            tips: $('#webpage_tdk_keywords').parent().next('td').text()
+        };
+
+        // description
+        obj.description = $('#webpage_tdk_description').text();
+        obj.description = {
+            value: $('#webpage_tdk_description').text(),
+            length: $('#webpage_description_len').text(),
+            tips: $('#webpage_tdk_description').parent().next('td').text()
+        };
+
+        return obj;
+    }
+
     /**
      * 获取 SEO 信息
      * @return {Array}
@@ -219,6 +247,7 @@ var NOW_UTIL = (function () {
     }
 
     return {
+        getSeoMeta: getSeoMeta,
         getListSeoBasic: getListSeoBasic,
         getListIndexChange: getListIndexChange,
         getListSiteRecord: getListSiteRecord,

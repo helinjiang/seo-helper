@@ -32,8 +32,8 @@ casper.then(function () {
     var result = this.evaluate(function () {
         var obj = {};
 
-        // 页面标题
-        obj.title = $('#webpage_title').text();
+        // 页面SEO信息的设置
+        obj.seoMeta = NOW_UTIL.getSeoMeta();
 
         // SEO 信息
         obj.listSeoBasic = NOW_UTIL.getListSeoBasic();
@@ -63,8 +63,6 @@ casper.then(function () {
 });
 
 casper.wait(5000, function () {
-    this.echo('I\'ve waited for a second.');
-
     // 截个图片看看
     this.captureSelector('../tmp/3.png', '#webpage_keywords');
 
@@ -80,8 +78,8 @@ casper.wait(5000, function () {
 });
 
 casper.run(function () {
-    utils.dump(resultInfo);
-
+    // utils.dump(resultInfo);
+    this.echo(JSON.stringify(resultInfo));
     this.exit();
 });
 
