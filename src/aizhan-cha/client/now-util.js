@@ -57,8 +57,36 @@ var NOW_UTIL = (function () {
         return arr;
     }
 
+    /**
+     * 获取词条在各搜索引擎中的收录情况
+     * @return {Array}
+     */
+    function getListSiteRecord() {
+        var arr = [];
+
+        var jTable = $('.cha-index-wrap .table:last');
+
+        var keyArr = $('tr:eq(0) td', jTable).map(function () {
+            return $.trim($(this).text());
+        });
+
+        var valueArr = $('tr:eq(1) td', jTable).map(function () {
+            return $.trim($(this).text());
+        });
+
+        for (var i = 1, length = keyArr.length; i < length; i++) {
+            arr.push({
+                name: keyArr[i],
+                value: valueArr[i]
+            });
+        }
+
+        return arr;
+    }
+
     return {
         getListSeoBasic: getListSeoBasic,
-        getListIndexChange: getListIndexChange
+        getListIndexChange: getListIndexChange,
+        getListSiteRecord: getListSiteRecord
     };
 })();

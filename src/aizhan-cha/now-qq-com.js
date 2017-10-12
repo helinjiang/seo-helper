@@ -36,6 +36,8 @@ casper.then(function () {
         // 收录变化等信息
         obj.listIndexChange = NOW_UTIL.getListIndexChange();
 
+        // 收录数目
+        obj.listSiteRecord = NOW_UTIL.getListSiteRecord();
 
         return obj;
     });
