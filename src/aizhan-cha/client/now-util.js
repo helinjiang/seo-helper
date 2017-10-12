@@ -88,7 +88,7 @@ var NOW_UTIL = (function () {
      * 获取来路关键词
      * @return {Array}
      */
-    function getListSitePCFrom() {
+    function getListPcFromKeys() {
         var arr = [];
 
         var jTable = $('#c1 .list .tabs-content:last .table');
@@ -113,6 +113,35 @@ var NOW_UTIL = (function () {
         return arr;
     }
 
+    /**
+     * 获取MATE关键词
+     * @return {Array}
+     */
+    function getListMetaKeys() {
+        var arr = [];
+
+        var jTable = $('#c1 .list .tabs-content:first .table');
+
+        var keyArr = [];
+        $('tr:eq(0) td', jTable).each(function () {
+            keyArr.push(_getPureStr($(this).text()));
+        });
+
+        arr.push(keyArr);
+
+        $('#webpage_keywords tr').each(function () {
+            var valueArr = [];
+
+            $('td', $(this)).map(function () {
+                valueArr.push(_getPureStr($(this).text()));
+            });
+
+            arr.push(valueArr);
+        });
+
+        return arr;
+    }
+
     function _getPureStr(str) {
         if (typeof str !== 'string') {
             return str;
@@ -124,6 +153,7 @@ var NOW_UTIL = (function () {
         getListSeoBasic: getListSeoBasic,
         getListIndexChange: getListIndexChange,
         getListSiteRecord: getListSiteRecord,
-        getListSitePCFrom: getListSitePCFrom
+        getListPcFromKeys: getListPcFromKeys,
+        getListMetaKeys: getListMetaKeys,
     };
 })();

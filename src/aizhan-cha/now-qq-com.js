@@ -40,7 +40,10 @@ casper.then(function () {
         obj.listSiteRecord = NOW_UTIL.getListSiteRecord();
 
         // 来路关键词
-        obj.listSitePCFrom = NOW_UTIL.getListSitePCFrom();
+        obj.pcFromKeys = NOW_UTIL.getListPcFromKeys();
+
+        // META 关键词
+        obj.getListMetaKeys = NOW_UTIL.getListMetaKeys();
 
         return obj;
     });
