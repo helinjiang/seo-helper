@@ -33,6 +33,10 @@ casper.then(function () {
         // SEO 信息
         obj.listSeoBasic = NOW_UTIL.getListSeoBasic();
 
+        // 收录变化等信息
+        obj.listIndexChange = NOW_UTIL.getListIndexChange();
+
+
         return obj;
     });
 

@@ -30,7 +30,35 @@ var NOW_UTIL = (function () {
         return arr;
     }
 
-    return {
-        getListSeoBasic: getListSeoBasic
+    /**
+     * 获取词条收录变化等信息
+     * @return {Array}
+     */
+    function getListIndexChange() {
+        var arr = [];
+
+        var jTable = $('.cha-index-change-wrap .table');
+
+        var keyArr = $('tr:eq(0) td', jTable).map(function () {
+            return $(this).text();
+        });
+
+        var valueArr = $('tr:eq(1) td', jTable).map(function () {
+            return $(this).text();
+        });
+
+        for (var i = 0, length = keyArr.length; i < length; i++) {
+            arr.push({
+                name: keyArr[i],
+                value: valueArr[i]
+            });
+        }
+
+        return arr;
     }
+
+    return {
+        getListSeoBasic: getListSeoBasic,
+        getListIndexChange: getListIndexChange
+    };
 })();
