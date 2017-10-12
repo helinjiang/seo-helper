@@ -157,6 +157,24 @@ var NOW_UTIL = (function () {
         return arr;
     }
 
+    /**
+     * 设置MATE关键词的排名情况
+     * @return {Array}
+     */
+    function setListMetaKeysRank(arr) {
+        arr.forEach(function (item) {
+            // 百度排名
+            item.baiduRank = _getPureStr($('#keywords_postion_' + (item.index + 1)).text());
+
+            // 排名变化
+
+            // 预计流量
+            item.expectIp = _getPureStr($('#keywords_postion_ip_' + (item.index + 1)).text());
+        });
+
+        return arr;
+    }
+
     function _getPureStr(str) {
         if (typeof str !== 'string') {
             return str;
@@ -169,6 +187,7 @@ var NOW_UTIL = (function () {
         getListIndexChange: getListIndexChange,
         getListSiteRecord: getListSiteRecord,
         getListPcFromKeys: getListPcFromKeys,
-        getListMetaKeys: getListMetaKeys
+        getListMetaKeys: getListMetaKeys,
+        setListMetaKeysRank: setListMetaKeysRank
     };
 })();

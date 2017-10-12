@@ -44,7 +44,7 @@ casper.then(function () {
         obj.pcFromKeys = NOW_UTIL.getListPcFromKeys();
 
         // META 关键词
-        obj.getListMetaKeys = NOW_UTIL.getListMetaKeys();
+        obj.listMetaKeys = NOW_UTIL.getListMetaKeys();
 
         return obj;
     });
@@ -52,29 +52,27 @@ casper.then(function () {
     resultInfo.data = result;
 });
 
-// casper.then(function () {
-//     // 点击全部更新
-//     this.click('#webpage_keywords_update a');
-// });
-//
-// casper.wait(5000, function () {
-//     this.echo('I\'ve waited for a second.');
-//
-//     // 截个图片看看
-//     this.captureSelector('../tmp/3.png', '#webpage_keywords');
-//
-//     // 解析页面的内容
-//     var result = this.evaluate(function () {
-//         var obj = {};
-//
-//         // 页面标题
-//         obj.p1 = $('#keywords_postion_1').text();
-//
-//         return obj;
-//     });
-//
-//     resultInfo.data = result;
-// });
+casper.then(function () {
+    // 点击全部更新
+    this.click('#webpage_keywords_update a');
+});
+
+casper.wait(5000, function () {
+    this.echo('I\'ve waited for a second.');
+
+    // 截个图片看看
+    this.captureSelector('../tmp/3.png', '#webpage_keywords');
+
+    // 解析页面的内容
+    var result = this.evaluate(function (arr) {
+        return NOW_UTIL.setListMetaKeysRank(arr);
+    }, resultInfo.data.listMetaKeys || []);
+
+    if (result && result.length) {
+        resultInfo.data.listMetaKeys = result;
+    }
+
+});
 
 casper.run(function () {
     utils.dump(resultInfo);
