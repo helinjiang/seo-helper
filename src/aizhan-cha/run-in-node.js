@@ -1,19 +1,17 @@
-const fs = require('fs');
 const db = require('./db');
-var count = 0;
+
+var dataAppend = '';
 
 console.log('主进程开启');
 
-function capture(successCallback) {
-    count++;
-
+function capture() {
     const spawn = require('child_process').spawn;
     const ls = spawn(/^win/.test(process.platform) ? 'casperjs.cmd' : 'casperjs', ['./now-qq-com.js']);
 
     ls.stdout.on('data', function (data) {
-        console.log('data', data.toString());
+        console.log('stdout: ' + data);
 
-        successCallback(data.toString());
+        dataAppend += data.toString();
     });
 
     ls.stderr.on('data', function (data) {
@@ -21,18 +19,21 @@ function capture(successCallback) {
     });
 
     ls.on('close', function (code) {
-        if (code == 1) {
+        console.log('======close======', code);
+
+        if (code === 1) {
             console.log('child process异常结束');
+        } else {
+            try {
+                let dataJSON = JSON.parse(dataAppend);
+
+                db.saveSeo(dataJSON);
+            } catch (e) {
+                console.error(e);
+            }
         }
     });
 
 }
 
-capture(function (dataStr) {
-    try {
-        let dataJSON = JSON.parse(dataStr);
-        db.saveSeo(dataJSON);
-    } catch (e) {
-
-    }
-});
+capture();
