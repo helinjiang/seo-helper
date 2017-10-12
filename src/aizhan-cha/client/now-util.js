@@ -84,9 +84,46 @@ var NOW_UTIL = (function () {
         return arr;
     }
 
+    /**
+     * 获取来路关键词
+     * @return {Array}
+     */
+    function getListSitePCFrom() {
+        var arr = [];
+
+        var jTable = $('#c1 .list .tabs-content:last .table');
+
+        var keyArr = [];
+        $('tr:eq(0) td', jTable).each(function () {
+            keyArr.push(_getPureStr($(this).text()));
+        });
+
+        arr.push(keyArr);
+
+        $('#baidurank_keywords_pc tr').each(function () {
+            var valueArr = [];
+
+            $('td', $(this)).map(function () {
+                valueArr.push(_getPureStr($(this).text()));
+            });
+
+            arr.push(valueArr);
+        });
+
+        return arr;
+    }
+
+    function _getPureStr(str) {
+        if (typeof str !== 'string') {
+            return str;
+        }
+        return $.trim(str).replace(/[\n\r]/gi, ' ').replace(/\s+/gi, ' ');
+    }
+
     return {
         getListSeoBasic: getListSeoBasic,
         getListIndexChange: getListIndexChange,
-        getListSiteRecord: getListSiteRecord
+        getListSiteRecord: getListSiteRecord,
+        getListSitePCFrom: getListSitePCFrom
     };
 })();

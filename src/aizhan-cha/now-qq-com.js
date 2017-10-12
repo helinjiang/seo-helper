@@ -39,6 +39,9 @@ casper.then(function () {
         // 收录数目
         obj.listSiteRecord = NOW_UTIL.getListSiteRecord();
 
+        // 来路关键词
+        obj.listSitePCFrom = NOW_UTIL.getListSitePCFrom();
+
         return obj;
     });
 
