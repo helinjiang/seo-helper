@@ -19,12 +19,12 @@ var NOW_UTIL = (function () {
 
         arr.push({
             name: '出站链接',
-            value: $('#webpage_link_o').text()
+            value: _getPureNumber($('#webpage_link_o').text())
         });
 
         arr.push({
             name: '首页內链',
-            value: $('#webpage_link_i').text()
+            value: _getPureNumber($('#webpage_link_i').text())
         });
 
         return arr;
@@ -105,16 +105,16 @@ var NOW_UTIL = (function () {
             obj.baiduRank = _getPureStr(jTd.eq(1).text());
 
             // 百度指数
-            obj.baiduIndex = _getPureStr(jTd.eq(2).text());
+            obj.baiduIndex = _getPureNumber(jTd.eq(2).text());
 
             // PC指数
-            obj.pcIndex = _getPureStr(jTd.eq(3).text());
+            obj.pcIndex = _getPureNumber(jTd.eq(3).text());
 
             // 移动指数
-            obj.mIndex = _getPureStr(jTd.eq(4).text());
+            obj.mIndex = _getPureNumber(jTd.eq(4).text());
 
             // 收录量
-            obj.recordCount = _getPureStr(jTd.eq(5).text());
+            obj.recordCount = _getPureNumber(jTd.eq(5).text());
 
             arr.push(obj);
         });
@@ -140,16 +140,16 @@ var NOW_UTIL = (function () {
             obj.keyword = _getPureStr(jTd.eq(0).text());
 
             // 出现频率
-            obj.frequency = _getPureStr(jTd.eq(1).text());
+            obj.frequency = _getPureNumber(jTd.eq(1).text());
 
             // 2%≦密度≦8%
             obj.density = _getPureStr(jTd.eq(2).text()).replace(/\%/gi, '');
 
             // 百度指数
-            obj.indexBaidu = _getPureStr(jTd.eq(3).text()).replace(/\,/gi, '');
+            obj.indexBaidu = _getPureNumber(jTd.eq(3).text());
 
             // 360指数
-            obj.index360 = _getPureStr(jTd.eq(4).text()).replace(/\,/gi, '');
+            obj.index360 = _getPureNumber(jTd.eq(4).text());
 
             arr.push(obj);
         });
@@ -180,6 +180,13 @@ var NOW_UTIL = (function () {
             return str;
         }
         return $.trim(str).replace(/[\n\r]/gi, ' ').replace(/\s+/gi, ' ');
+    }
+
+    function _getPureNumber(str) {
+        if (typeof str !== 'string') {
+            return str;
+        }
+        return _getPureStr(str).replace(/\,/gi, '');
     }
 
     return {
