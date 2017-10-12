@@ -91,23 +91,32 @@ var NOW_UTIL = (function () {
     function getListPcFromKeys() {
         var arr = [];
 
-        var jTable = $('#c1 .list .tabs-content:last .table');
+        $('#baidurank_keywords_pc tr').each(function (index) {
+            var jTd = $('td', $(this));
 
-        var keyArr = [];
-        $('tr:eq(0) td', jTable).each(function () {
-            keyArr.push(_getPureStr($(this).text()));
-        });
+            var obj = {};
 
-        arr.push(keyArr);
+            obj.index = index;
 
-        $('#baidurank_keywords_pc tr').each(function () {
-            var valueArr = [];
+            // 关键词
+            obj.keyword = _getPureStr(jTd.eq(0).text());
 
-            $('td', $(this)).map(function () {
-                valueArr.push(_getPureStr($(this).text()));
-            });
+            // 百度排名
+            obj.baiduRank = _getPureStr(jTd.eq(1).text());
 
-            arr.push(valueArr);
+            // 百度指数
+            obj.baiduIndex = _getPureStr(jTd.eq(2).text());
+
+            // PC指数
+            obj.pcIndex = _getPureStr(jTd.eq(3).text());
+
+            // 移动指数
+            obj.mIndex = _getPureStr(jTd.eq(4).text());
+
+            // 收录量
+            obj.recordCount = _getPureStr(jTd.eq(5).text());
+
+            arr.push(obj);
         });
 
         return arr;
@@ -120,23 +129,29 @@ var NOW_UTIL = (function () {
     function getListMetaKeys() {
         var arr = [];
 
-        var jTable = $('#c1 .list .tabs-content:first .table');
+        $('#webpage_keywords tr').each(function (index) {
+            var jTd = $('td', $(this));
 
-        var keyArr = [];
-        $('tr:eq(0) td', jTable).each(function () {
-            keyArr.push(_getPureStr($(this).text()));
-        });
+            var obj = {};
 
-        arr.push(keyArr);
+            obj.index = index;
 
-        $('#webpage_keywords tr').each(function () {
-            var valueArr = [];
+            // 关键词
+            obj.keyword = _getPureStr(jTd.eq(0).text());
 
-            $('td', $(this)).map(function () {
-                valueArr.push(_getPureStr($(this).text()));
-            });
+            // 出现频率
+            obj.frequency = _getPureStr(jTd.eq(1).text());
 
-            arr.push(valueArr);
+            // 2%≦密度≦8%
+            obj.density = _getPureStr(jTd.eq(2).text()).replace(/\%/gi, '');
+
+            // 百度指数
+            obj.indexBaidu = _getPureStr(jTd.eq(3).text()).replace(/\,/gi, '');
+
+            // 360指数
+            obj.index360 = _getPureStr(jTd.eq(4).text()).replace(/\,/gi, '');
+
+            arr.push(obj);
         });
 
         return arr;
@@ -154,6 +169,6 @@ var NOW_UTIL = (function () {
         getListIndexChange: getListIndexChange,
         getListSiteRecord: getListSiteRecord,
         getListPcFromKeys: getListPcFromKeys,
-        getListMetaKeys: getListMetaKeys,
+        getListMetaKeys: getListMetaKeys
     };
 })();
