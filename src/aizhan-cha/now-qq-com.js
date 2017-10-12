@@ -23,6 +23,10 @@ casper.start('https://www.aizhan.com/cha/now.qq.com/', function () {
     this.capture('../tmp/1.png');
 });
 
+casper.waitForSelector('#webpage_keywords_update a', function () {
+    this.capture('../tmp/111.png');
+});
+
 casper.then(function () {
     // 解析页面的内容
     var result = this.evaluate(function () {
@@ -42,6 +46,7 @@ casper.then(function () {
 
         // 来路关键词
         obj.pcFromKeys = NOW_UTIL.getListPcFromKeys();
+        obj.listMobileFromKeys = NOW_UTIL.getListMobileFromKeys();
 
         // META 关键词
         obj.listMetaKeys = NOW_UTIL.getListMetaKeys();
