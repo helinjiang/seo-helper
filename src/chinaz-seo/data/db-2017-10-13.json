@@ -1,0 +1,255 @@
+{
+  "timestamp": 1507867467810,
+  "dateStr": "2017-10-13",
+  "seo": {
+    "data": {
+      "listIndexChange": [
+        {
+          "name": "百度流量预计",
+          "value": "1540"
+        },
+        {
+          "name": "关键词库",
+          "value": "15"
+        },
+        {
+          "name": "百度快照",
+          "value": "2017-09-28"
+        },
+        {
+          "name": "首页位置",
+          "value": "--"
+        },
+        {
+          "name": "索引量",
+          "value": "-"
+        },
+        {
+          "name": "今日收录",
+          "value": "0"
+        },
+        {
+          "name": "最近一周",
+          "value": "0"
+        },
+        {
+          "name": "最近一月",
+          "value": "0"
+        }
+      ],
+      "listMetaKeys": [
+        {
+          "baiduRank": "1",
+          "expectIp": "232 ~ 310",
+          "index": 0,
+          "index360": "91",
+          "indexBaiduMobile": "1204",
+          "indexBaiduPC": "348",
+          "keyword": "now"
+        },
+        {
+          "baiduRank": "1",
+          "expectIp": "893 ~ 1511",
+          "index": 1,
+          "index360": "0",
+          "indexBaiduMobile": "1006",
+          "indexBaiduPC": "368",
+          "keyword": "now直播"
+        },
+        {
+          "baiduRank": "1",
+          "expectIp": "232 ~ 310",
+          "index": 2,
+          "index360": "91",
+          "indexBaiduMobile": "1204",
+          "indexBaiduPC": "348",
+          "keyword": "NOW"
+        },
+        {
+          "baiduRank": "1",
+          "expectIp": "893 ~ 1511",
+          "index": 3,
+          "index360": "0",
+          "indexBaiduMobile": "1006",
+          "indexBaiduPC": "368",
+          "keyword": "NOW直播"
+        },
+        {
+          "baiduRank": "1",
+          "expectIp": "0",
+          "index": 4,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "NOW直播官网"
+        },
+        {
+          "baiduRank": "4",
+          "expectIp": "0",
+          "index": 5,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "NOW直播下载"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "0",
+          "index": 6,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "腾讯"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "0",
+          "index": 7,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "0",
+          "index": 8,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "腾讯直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "获取失败",
+          "index": 9,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "QQ直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "获取失败",
+          "index": 10,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "视频交友"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 11,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "直播交友"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 12,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "小视频"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 13,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "短视频"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 14,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "附近美女"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 15,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "美女视频"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 16,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "美女直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 17,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "美女直播间"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 18,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "美女主播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 19,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "附近交友"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 20,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "交友"
+        }
+      ],
+      "listSiteRecord": [
+        {
+          "name": "百度",
+          "value": "13"
+        },
+        {
+          "name": "谷歌",
+          "value": "68"
+        },
+        {
+          "name": "360",
+          "value": "4"
+        },
+        {
+          "name": "搜狗",
+          "value": "4"
+        },
+        {
+          "name": "bing",
+          "value": "-"
+        }
+      ]
+    }
+  }
+}
