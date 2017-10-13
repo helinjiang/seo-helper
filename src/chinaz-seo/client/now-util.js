@@ -128,27 +128,28 @@ var NOW_UTIL = (function () {
     function getListMetaKeys() {
         var arr = [];
 
-        $('#webpage_keywords tr').each(function (index) {
-            var jTd = $('td', $(this));
+        $('#seov2kwsort li').each(function (index) {
+            if (index < 1) {
+                return;
+            }
+
+            var jTd = $('.Ma01LiRow', $(this));
 
             var obj = {};
 
-            obj.index = index;
+            obj.index = index - 1;
 
             // 关键词
             obj.keyword = _getPureStr(jTd.eq(0).text());
 
-            // 出现频率
-            obj.frequency = _getPureNumber(jTd.eq(1).text());
+            // PC 指数
+            obj.indexBaiduPC = _getPureNumber(jTd.eq(1).text());
 
-            // 2%≦密度≦8%
-            obj.density = _getPureStr(jTd.eq(2).text()).replace(/\%/gi, '');
-
-            // 百度指数
-            obj.indexBaidu = _getPureNumber(jTd.eq(3).text());
+            // 移动指数
+            obj.indexBaiduMobile = _getPureNumber(jTd.eq(2).text());
 
             // 360指数
-            obj.index360 = _getPureNumber(jTd.eq(4).text());
+            obj.index360 = _getPureNumber(jTd.eq(3).text());
 
             arr.push(obj);
         });
@@ -163,12 +164,22 @@ var NOW_UTIL = (function () {
     function setListMetaKeysRank(arr) {
         arr.forEach(function (item) {
             // 百度排名
-            item.baiduRank = _getPureStr($('#keywords_postion_' + (item.index + 1)).text());
+            var baiduRank = _getPureStr($('#baidu_' + item.index + '_2').text());
+            if (baiduRank === '重试' || baiduRank === '查询' || baiduRank === '') {
+                baiduRank = '获取失败';
+            }
+
+            item.baiduRank = baiduRank;
 
             // 排名变化
 
             // 预计流量
-            item.expectIp = _getPureStr($('#keywords_postion_ip_' + (item.index + 1)).text());
+            var expectIp = _getPureStr($('#baidu_' + item.index + '_1').text());
+            if (expectIp === '重试' || expectIp === '查询' || expectIp === '') {
+                expectIp = '获取失败';
+            }
+
+            item.expectIp = expectIp;
         });
 
         return arr;

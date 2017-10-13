@@ -1,4 +1,5 @@
-var utils = require('utils');
+var today = new Date();
+var dateStr = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
 var resultInfo = {};
 
@@ -19,15 +20,17 @@ var casper = require('casper').create({
 // phantom.outputEncoding = 'gbk';//解决乱码问题
 
 casper.start('http://seo.chinaz.com/now.qq.com', function () {
+    // this.echo('stared');
     // 首先截个图
-    this.capture('../tmp/chinaz-1.png');
+    // this.capture('../tmp/chinaz-1.png');
 });
 
 casper.waitForSelector('#seoinfo', function () {
-    this.capture('../tmp/chinaz-2.png');
+    this.capture('./capture/' + dateStr + '-1.png');
 });
 
 casper.then(function () {
+    // this.echo('stared222');
     // 解析页面的内容
     var result = this.evaluate(function () {
         var obj = {};
@@ -43,7 +46,7 @@ casper.then(function () {
         // obj.listMobileFromKeys = NOW_UTIL.getListMobileFromKeys();
 
         // META 关键词
-        // obj.listMetaKeys = NOW_UTIL.getListMetaKeys();
+        obj.listMetaKeys = NOW_UTIL.getListMetaKeys();
 
         return obj;
     });
@@ -51,25 +54,26 @@ casper.then(function () {
     resultInfo.data = result;
 });
 
-// casper.then(function () {
-//     // 点击全部更新
-//     this.click('#webpage_keywords_update a');
-// });
-//
-// casper.wait(5000, function () {
-//     // 截个图片看看
-//     this.captureSelector('../tmp/3.png', '#webpage_keywords');
-//
-//     // 解析页面的内容
-//     var result = this.evaluate(function (arr) {
-//         return NOW_UTIL.setListMetaKeysRank(arr);
-//     }, resultInfo.data.listMetaKeys || []);
-//
-//     if (result && result.length) {
-//         resultInfo.data.listMetaKeys = result;
-//     }
-//
-// });
+casper.then(function () {
+    // 点击全部更新
+    this.click('#onekeyalllocal');
+    this.click('#onekeyall');
+});
+
+casper.wait(20 * 1000, function () {
+    // 截个图片看看
+    this.captureSelector('./capture/' + dateStr + '-2.png', '#seov2kwsort');
+
+    // 解析页面的内容
+    var result = this.evaluate(function (arr) {
+        return NOW_UTIL.setListMetaKeysRank(arr);
+    }, resultInfo.data.listMetaKeys || []);
+
+    if (result && result.length) {
+        resultInfo.data.listMetaKeys = result;
+    }
+
+});
 
 casper.run(function () {
     // utils.dump(resultInfo);
