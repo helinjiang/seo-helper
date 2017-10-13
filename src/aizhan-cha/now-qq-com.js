@@ -1,4 +1,5 @@
-var utils = require('utils');
+var today = new Date();
+var dateStr = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
 var resultInfo = {};
 
@@ -19,12 +20,13 @@ var casper = require('casper').create({
 // phantom.outputEncoding = 'gbk';//解决乱码问题
 
 casper.start('https://www.aizhan.com/cha/now.qq.com/', function () {
+    // this.echo('stared');
     // 首先截个图
-    this.capture('../tmp/1.png');
+    // this.capture('../tmp/chinaz-1.png');
 });
 
 casper.waitForSelector('#webpage_keywords_update a', function () {
-    this.capture('../tmp/111.png');
+    this.capture('./capture/' + dateStr + '-1.png');
 });
 
 casper.then(function () {
@@ -64,7 +66,7 @@ casper.then(function () {
 
 casper.wait(5000, function () {
     // 截个图片看看
-    this.captureSelector('../tmp/3.png', '#webpage_keywords');
+    this.captureSelector('./capture/' + dateStr + '-2.png', '#webpage_keywords');
 
     // 解析页面的内容
     var result = this.evaluate(function (arr) {
