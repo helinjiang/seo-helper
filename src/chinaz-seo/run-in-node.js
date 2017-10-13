@@ -1,8 +1,11 @@
+const fse = require('fs-extra');
 const db = require('./db');
 
 var dataAppend = '';
 
 console.log('主进程开启');
+
+fse.ensureDirSync('./capture');
 
 function capture() {
     const spawn = require('child_process').spawn;

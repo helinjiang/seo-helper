@@ -55,73 +55,6 @@ var NOW_UTIL = (function () {
     }
 
     /**
-     * 获取PC来路关键词
-     * @return {Array}
-     */
-    function getListPcFromKeys() {
-        var arr = [];
-
-        $('#baidurank_keywords_pc tr').each(function (index) {
-            var jTd = $('td', $(this));
-
-            var obj = {};
-
-            obj.index = index;
-
-            // 关键词
-            obj.keyword = _getPureStr(jTd.eq(0).text());
-
-            // 百度排名
-            obj.baiduRank = _getPureStr(jTd.eq(1).text());
-
-            // 百度指数
-            obj.baiduIndex = _getPureNumber(jTd.eq(2).text());
-
-            // PC指数
-            obj.pcIndex = _getPureNumber(jTd.eq(3).text());
-
-            // 移动指数
-            obj.mIndex = _getPureNumber(jTd.eq(4).text());
-
-            // 收录量
-            obj.recordCount = _getPureNumber(jTd.eq(5).text());
-
-            arr.push(obj);
-        });
-
-        return arr;
-    }
-
-    /**
-     * 获取移动来路关键词
-     * @return {Array}
-     */
-    function getListMobileFromKeys() {
-        var arr = [];
-
-        $('#baidurank_keywords_mobile tr').each(function (index) {
-            var jTd = $('td', $(this));
-
-            var obj = {};
-
-            obj.index = index;
-
-            // 关键词
-            obj.keyword = _getPureStr(jTd.eq(0).text());
-
-            // 百度排名
-            obj.baiduRank = _getPureStr(jTd.eq(1).text());
-
-            // 移动指数
-            obj.mIndex = _getPureNumber(jTd.eq(4).text());
-
-            arr.push(obj);
-        });
-
-        return arr;
-    }
-
-    /**
      * 获取MATE关键词
      * @return {Array}
      */
@@ -202,8 +135,6 @@ var NOW_UTIL = (function () {
     return {
         getListIndexChange: getListIndexChange,
         getListSiteRecord: getListSiteRecord,
-        getListPcFromKeys: getListPcFromKeys,
-        getListMobileFromKeys: getListMobileFromKeys,
         getListMetaKeys: getListMetaKeys,
         setListMetaKeysRank: setListMetaKeysRank
     };

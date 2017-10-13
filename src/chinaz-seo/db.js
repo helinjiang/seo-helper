@@ -1,5 +1,8 @@
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
+const fse = require('fs-extra');
+
+fse.ensureDirSync('./data');
 
 const today = new Date();
 const dateStr = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/helinjiang/seo-helper#readme",
   "dependencies": {
+    "fs-extra": "^4.0.2",
     "lowdb": "^1.0.0"
   }
 }

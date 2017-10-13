@@ -41,10 +41,6 @@ casper.then(function () {
         // 收录数目
         obj.listSiteRecord = NOW_UTIL.getListSiteRecord();
 
-        // 来路关键词
-        // obj.pcFromKeys = NOW_UTIL.getListPcFromKeys();
-        // obj.listMobileFromKeys = NOW_UTIL.getListMobileFromKeys();
-
         // META 关键词
         obj.listMetaKeys = NOW_UTIL.getListMetaKeys();
 
@@ -73,6 +69,16 @@ casper.wait(20 * 1000, function () {
         resultInfo.data.listMetaKeys = result;
     }
 
+});
+
+casper.then(function () {
+    // 点击全部更新
+    this.click('#tabTitleKw > .Stab[v="1"]');
+});
+
+casper.wait(2 * 1000, function () {
+    // 截个图片看看
+    this.captureSelector('./capture/' + dateStr + '-3.png', '#seov2kwtui');
 });
 
 casper.run(function () {
