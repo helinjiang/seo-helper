@@ -1,0 +1,183 @@
+{
+  "timestamp": 1509980876293,
+  "dateStr": "2017-11-6",
+  "seo": {
+    "data": {
+      "listIndexChange": [
+        {
+          "name": "百度流量预计",
+          "value": "2228"
+        },
+        {
+          "name": "关键词库",
+          "value": "14"
+        },
+        {
+          "name": "百度快照",
+          "value": "2017-10-20"
+        },
+        {
+          "name": "首页位置",
+          "value": "--"
+        },
+        {
+          "name": "索引量",
+          "value": "--"
+        },
+        {
+          "name": "今日收录",
+          "value": "0"
+        },
+        {
+          "name": "最近一周",
+          "value": "0"
+        },
+        {
+          "name": "最近一月",
+          "value": "0"
+        }
+      ],
+      "listMetaKeys": [
+        {
+          "baiduRank": "1",
+          "expectIp": "获取失败",
+          "index": 0,
+          "index360": "91",
+          "indexBaiduMobile": "1417",
+          "indexBaiduPC": "436",
+          "keyword": "now"
+        },
+        {
+          "baiduRank": "1",
+          "expectIp": "938 ~ 1588",
+          "index": 1,
+          "index360": "0",
+          "indexBaiduMobile": "986",
+          "indexBaiduPC": "458",
+          "keyword": "now直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "0",
+          "index": 2,
+          "index360": "13224",
+          "indexBaiduMobile": "18456",
+          "indexBaiduPC": "6849",
+          "keyword": "直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "0",
+          "index": 3,
+          "index360": "6658",
+          "indexBaiduMobile": "736",
+          "indexBaiduPC": "1231",
+          "keyword": "腾讯直播"
+        },
+        {
+          "baiduRank": "28",
+          "expectIp": "1",
+          "index": 4,
+          "index360": "6562",
+          "indexBaiduMobile": "781",
+          "indexBaiduPC": "791",
+          "keyword": "QQ直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "获取失败",
+          "index": 5,
+          "index360": "2512",
+          "indexBaiduMobile": "5343",
+          "indexBaiduPC": "679",
+          "keyword": "美女直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 6,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "附近直播"
+        },
+        {
+          "baiduRank": "20",
+          "expectIp": "查询 重试",
+          "index": 7,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "才艺直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 8,
+          "index360": "291",
+          "indexBaiduMobile": "2454",
+          "indexBaiduPC": "623",
+          "keyword": "小视频"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 9,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "个人直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 10,
+          "index360": "36532",
+          "indexBaiduMobile": "18365",
+          "indexBaiduPC": "1303",
+          "keyword": "美女视频"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 11,
+          "index360": "2236",
+          "indexBaiduMobile": "1314",
+          "indexBaiduPC": "410",
+          "keyword": "在线直播"
+        },
+        {
+          "baiduRank": "100名以外",
+          "expectIp": "查询 重试",
+          "index": 12,
+          "index360": "0",
+          "indexBaiduMobile": "0",
+          "indexBaiduPC": "0",
+          "keyword": "手机直播"
+        }
+      ],
+      "listSiteRecord": [
+        {
+          "name": "百度",
+          "value": "17"
+        },
+        {
+          "name": "谷歌",
+          "value": "68"
+        },
+        {
+          "name": "360",
+          "value": "6"
+        },
+        {
+          "name": "搜狗",
+          "value": "4"
+        },
+        {
+          "name": "bing",
+          "value": "-"
+        }
+      ]
+    }
+  }
+}
