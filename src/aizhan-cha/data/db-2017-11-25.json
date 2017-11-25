@@ -1,0 +1,377 @@
+{
+  "timestamp": 1511622289755,
+  "dateStr": "2017-11-25",
+  "seo": {
+    "data": {
+      "listIndexChange": [
+        {
+          "name": "PC词数",
+          "value": "12"
+        },
+        {
+          "name": "移动词数",
+          "value": "21"
+        },
+        {
+          "name": "首页位置",
+          "value": "-"
+        },
+        {
+          "name": "索引",
+          "value": "0"
+        },
+        {
+          "name": "24小时收录",
+          "value": "0"
+        },
+        {
+          "name": "一周收录",
+          "value": "0"
+        },
+        {
+          "name": "一月收录",
+          "value": "0"
+        }
+      ],
+      "listMetaKeys": [
+        {
+          "baiduRank": "",
+          "density": "6.30",
+          "expectIp": "未知",
+          "frequency": "55",
+          "index": 0,
+          "index360": "21697",
+          "indexBaidu": "24795",
+          "keyword": "直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 1,
+          "index360": "10013",
+          "indexBaidu": "19623",
+          "keyword": "美女视频"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 2,
+          "index360": "3978",
+          "indexBaidu": "5976",
+          "keyword": "美女直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.17",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 3,
+          "index360": "408",
+          "indexBaidu": "3086",
+          "keyword": "小视频"
+        },
+        {
+          "baiduRank": "",
+          "density": "6.19",
+          "expectIp": "未知",
+          "frequency": "36",
+          "index": 4,
+          "index360": "123",
+          "indexBaidu": "1843",
+          "keyword": "now"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 5,
+          "index360": "1677",
+          "indexBaidu": "1788",
+          "keyword": "在线直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 6,
+          "index360": "3067",
+          "indexBaidu": "1707",
+          "keyword": "腾讯直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 7,
+          "index360": "1845",
+          "indexBaidu": "1640",
+          "keyword": "QQ直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "6.30",
+          "expectIp": "未知",
+          "frequency": "22",
+          "index": 8,
+          "index360": "328",
+          "indexBaidu": "1426",
+          "keyword": "now直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 9,
+          "index360": "-",
+          "indexBaidu": "-",
+          "keyword": "个人直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 10,
+          "index360": "-",
+          "indexBaidu": "-",
+          "keyword": "才艺直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 11,
+          "index360": "-",
+          "indexBaidu": "-",
+          "keyword": "附近直播"
+        },
+        {
+          "baiduRank": "",
+          "density": "0.23",
+          "expectIp": "未知",
+          "frequency": "1",
+          "index": 12,
+          "index360": "-",
+          "indexBaidu": "-",
+          "keyword": "手机直播"
+        }
+      ],
+      "listMobileFromKeys": [
+        {
+          "baiduRank": "第1页 第1位",
+          "index": 0,
+          "keyword": "now直播",
+          "mIndex": "956"
+        },
+        {
+          "baiduRank": "第1页 第2位",
+          "index": 1,
+          "keyword": "now",
+          "mIndex": "1138"
+        },
+        {
+          "baiduRank": "第1页 第9位",
+          "index": 2,
+          "keyword": "qq live",
+          "mIndex": "65"
+        },
+        {
+          "baiduRank": "第2页 第1位",
+          "index": 3,
+          "keyword": "qqzhibo",
+          "mIndex": "36"
+        },
+        {
+          "baiduRank": "第2页 第3位",
+          "index": 4,
+          "keyword": "now直播",
+          "mIndex": "956"
+        },
+        {
+          "baiduRank": "第2页 第9位",
+          "index": 5,
+          "keyword": "深海寻宝",
+          "mIndex": "0"
+        },
+        {
+          "baiduRank": "第3页 第2位",
+          "index": 6,
+          "keyword": "now直播",
+          "mIndex": "956"
+        },
+        {
+          "baiduRank": "第3页 第6位",
+          "index": 7,
+          "keyword": "qq 直播",
+          "mIndex": "28"
+        },
+        {
+          "baiduRank": "第3页 第7位",
+          "index": 8,
+          "keyword": "qq视频直播",
+          "mIndex": "17"
+        },
+        {
+          "baiduRank": "第3页 第10位",
+          "index": 9,
+          "keyword": "qq直播官方下载",
+          "mIndex": "0"
+        }
+      ],
+      "listSeoBasic": [
+        {
+          "name": "百度来路",
+          "value": "1,455 ~ 1,663"
+        },
+        {
+          "name": "移动来路",
+          "value": "999 ~ 1,145"
+        },
+        {
+          "name": "出站链接",
+          "value": "4"
+        },
+        {
+          "name": "首页內链",
+          "value": "14"
+        }
+      ],
+      "listSiteRecord": [
+        {
+          "name": "百度",
+          "value": "18"
+        },
+        {
+          "name": "谷歌",
+          "value": "-"
+        },
+        {
+          "name": "360",
+          "value": "-"
+        },
+        {
+          "name": "搜狗",
+          "value": "-"
+        }
+      ],
+      "pcFromKeys": [
+        {
+          "baiduIndex": "1407",
+          "baiduRank": "第1页 第1位",
+          "index": 0,
+          "keyword": "now直播",
+          "mIndex": "956",
+          "pcIndex": "451",
+          "recordCount": "2740000"
+        },
+        {
+          "baiduIndex": "1550",
+          "baiduRank": "第1页 第2位",
+          "index": 1,
+          "keyword": "now",
+          "mIndex": "1138",
+          "pcIndex": "412",
+          "recordCount": "62100000"
+        },
+        {
+          "baiduIndex": "132",
+          "baiduRank": "第2页 第2位",
+          "index": 2,
+          "keyword": "qqzhibo",
+          "mIndex": "36",
+          "pcIndex": "96",
+          "recordCount": "3160000"
+        },
+        {
+          "baiduIndex": "1576",
+          "baiduRank": "第2页 第10位",
+          "index": 3,
+          "keyword": "qq直播",
+          "mIndex": "761",
+          "pcIndex": "815",
+          "recordCount": "1630000"
+        },
+        {
+          "baiduIndex": "136",
+          "baiduRank": "第2页 第10位",
+          "index": 4,
+          "keyword": "腾讯直播间",
+          "mIndex": "68",
+          "pcIndex": "68",
+          "recordCount": "5180000"
+        },
+        {
+          "baiduIndex": "62",
+          "baiduRank": "第3页 第1位",
+          "index": 5,
+          "keyword": "qqzb",
+          "mIndex": "27",
+          "pcIndex": "35",
+          "recordCount": "5070000"
+        },
+        {
+          "baiduIndex": "34",
+          "baiduRank": "第3页 第2位",
+          "index": 6,
+          "keyword": "qq视频直播",
+          "mIndex": "17",
+          "pcIndex": "17",
+          "recordCount": "6460000"
+        },
+        {
+          "baiduIndex": "8",
+          "baiduRank": "第3页 第4位",
+          "index": 7,
+          "keyword": "qq直播软件",
+          "mIndex": "0",
+          "pcIndex": "8",
+          "recordCount": "99200"
+        },
+        {
+          "baiduIndex": "8",
+          "baiduRank": "第3页 第5位",
+          "index": 8,
+          "keyword": "qq live下载",
+          "mIndex": "0",
+          "pcIndex": "8",
+          "recordCount": "1790000"
+        },
+        {
+          "baiduIndex": "81",
+          "baiduRank": "第3页 第7位",
+          "index": 9,
+          "keyword": "qq 直播",
+          "mIndex": "28",
+          "pcIndex": "53",
+          "recordCount": "9800000"
+        }
+      ],
+      "seoMeta": {
+        "description": {
+          "length": "126",
+          "tips": "一般不超过200字符",
+          "value": "NOW直播，腾讯旗下全民高清视频直播平台，汇集中外大咖，最in网红，草根偶像，明星艺人，校花，小鲜肉，逗逼段子手，各类美食、音乐、旅游、时尚、健身达人与你24小时不间断互动直播，各种奇葩刺激的直播玩法，让你跃跃欲试，你会发现，原来人人都可以当主播赚钱！"
+        },
+        "keywords": {
+          "length": "61",
+          "tips": "一般不超过100字符",
+          "value": "now,now直播,直播,腾讯直播,QQ直播,美女直播,附近直播,才艺直播,小视频,个人直播,美女视频,在线直播,手机直播"
+        },
+        "title": {
+          "length": "20",
+          "tips": "一般不超过80字符",
+          "value": "NOW直播—腾讯旗下全民视频社交直播平台"
+        }
+      }
+    }
+  }
+}
